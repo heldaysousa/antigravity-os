@@ -1,0 +1,131 @@
+{
+  "requires_multiple_agents": true,
+  "agents_needed": [
+    "front-end-dev",
+    "ui-ux-designer",
+    "verifier",
+    "composer",
+    "prompt-engineer"
+  ],
+  "token_optimization_strategy": {
+    "workflow": "/token-budget",
+    "rule": "Agentes NÃO carregarão o CSS global nem componentes irrelavantes. Orquestrador injetará apenas 1 arquivo TSX por vez no escopo via comando `slice` no contexto CLI, emulando isolation."
+  },
+  "turbo_mode": {
+    "enabled": true,
+    "rules": "Para tasks repetitivas de troca de 'bg-gray' -> 'GlassCard', o orquestrador vai engatilhar '// turbo' nos comandos de sed/replace antes de invocar o front-end-dev para ganho de 60% de velocidade."
+  },
+  "execution_order": [
+    {
+      "task_id": "3.1",
+      "name": "Phase 3.1: Settings Tabs",
+      "agent": "front-end-dev",
+      "reason": "40+ contaminações de tokens antigos na base administrativa",
+      "focus": "Remover bg-gray/text-gray, inserir GlassCard, InputGlass, ButtonGlass",
+      "files": [
+        "src/pages/dashboard/components/settings/CompanyTab.tsx",
+        "src/pages/dashboard/components/settings/WebhooksTab.tsx",
+        "src/pages/dashboard/components/settings/SecurityTab.tsx",
+        "src/pages/dashboard/components/settings/ApiKeysTab.tsx",
+        "src/pages/dashboard/components/settings/NotificationsTab.tsx",
+        "src/pages/dashboard/components/settings/ProfileTab.tsx",
+        "src/pages/dashboard/components/settings/WhatsAppTab.tsx",
+        "src/pages/dashboard/components/settings/BillingTab.tsx"
+      ],
+      "dependencies": [],
+      "duration_estimate": "15m (Turbo enabled)",
+      "validation_strategy": "grep_search para bg-gray deve retornar 0; type-check"
+    },
+    {
+      "task_id": "3.2",
+      "name": "Phase 3.2: Universal Chat/Conversations",
+      "agent": "ui-ux-designer",
+      "reason": "Área de maior impacto visual. Precisa de hierarquia de contraste nas bolhas.",
+      "focus": "Uniformizar Glass e Pulse nos elementos de Chat",
+      "files": [
+        "src/pages/dashboard/Conversations.tsx",
+        "src/components/conversations/ConversationList.tsx",
+        "src/components/conversations/ConversationCard.tsx"
+      ],
+      "dependencies": [],
+      "duration_estimate": "10m",
+      "validation_strategy": "Visual validation via layout checks; sem gray estático"
+    },
+    {
+      "task_id": "3.3",
+      "name": "Phase 3.3: Base Atoms Propagation",
+      "agent": "front-end-dev",
+      "reason": "Os Atoms propagam para todas as pages. Se corrigidos, salvam tokens.",
+      "focus": "Input, Badge, Modal - migrar interface prop para equivalentes @ui/ds",
+      "files": [
+        "src/components/atoms/Input.tsx",
+        "src/components/atoms/Badge.tsx",
+        "src/components/atoms/Avatar.tsx",
+        "src/components/atoms/Modal.tsx"
+      ],
+      "dependencies": [],
+      "duration_estimate": "5m",
+      "validation_strategy": "Componentes devem importar DS ou clonar estilos exatos"
+    },
+    {
+      "task_id": "3.4",
+      "name": "Phase 3.4: Automation & Playbooks",
+      "agent": "front-end-dev",
+      "reason": "Componentes de nós de flow com borders despadronizados.",
+      "focus": "Diferenciar IF vs Action usando mint/amber glow over Glass",
+      "files": [
+        "src/components/automation/TriggerForm.tsx",
+        "src/components/automation/ActionBuilder.tsx",
+        "src/components/automation/ConditionBuilder.tsx"
+      ],
+      "dependencies": ["3.3"],
+      "duration_estimate": "8m",
+      "validation_strategy": "grep_search sem bg-gray nos triggers"
+    },
+    {
+      "task_id": "3.5",
+      "name": "Phase 3.5: Leads, CRM & Kanban",
+      "agent": "ui-ux-designer",
+      "reason": "Visões densas de dados",
+      "focus": "Hover effects progressivos (translate-y-1 + glow) sobre tabelas",
+      "files": [
+        "src/pages/dashboard/Leads.tsx",
+        "src/components/leads/LeadsTable.tsx",
+        "src/pages/dashboard/CRM.tsx",
+        "src/pages/dashboard/KanbanV2.tsx",
+        "src/pages/dashboard/Kanban.tsx"
+      ],
+      "dependencies": ["3.1", "3.3"],
+      "duration_estimate": "12m",
+      "validation_strategy": "Nenhuma regressão funcional nos callbacks de drag/drop"
+    },
+    {
+      "task_id": "3.6",
+      "name": "Phase 3.6: Debug & Integrations",
+      "agent": "composer",
+      "reason": "Resolução de erros TSX herdados + Validação Cruzada",
+      "focus": "Consertar os TS Errors do ButtonGlass (props iconLeft/Right), Support.tsx padding",
+      "files": [
+        "src/components/ui/ds/ButtonGlass.tsx",
+        "src/components/ui/ds/GlassCard.tsx",
+        "src/pages/support/Support.tsx"
+      ],
+      "dependencies": ["3.1", "3.2", "3.3", "3.4", "3.5"],
+      "duration_estimate": "5m",
+      "validation_strategy": "pnpm run type-check == EXIT 0"
+    }
+  ],
+  "parallel_blocks": [
+    {
+      "tasks": ["3.1", "3.2", "3.3"],
+      "reason": "Independência total das pastas /settings, /conversations e /atoms. Redução de CPU idle runtime em 66%."
+    },
+    {
+      "tasks": ["3.4", "3.5"],
+      "reason": "Fluxogramas e CRM são independentes e podem transcorrer simultaneamente."
+    }
+  ],
+  "critical_path": ["3.3", "3.5", "3.6"],
+  "estimated_duration": "55 minutos (serial) -> 25 minutos (paralelo com turbo)",
+  "risk_assessment": "Risco Crítico no Input.tsx (3.3). Se a interface for quebrada, Forms como Login falharão silenciosamente. Mitigação: @verifier rodará teste sintético no átomo de Input antes de ir para Wave 2."
+}
