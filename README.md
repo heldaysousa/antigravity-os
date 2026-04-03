@@ -1,119 +1,138 @@
-<![CDATA[<div align="center">
+<p align="center">
+  <img src="https://img.shields.io/badge/version-4.0-blueviolet?style=for-the-badge" alt="Version" />
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/platform-Gemini_CLI-black?style=for-the-badge" alt="Platform" />
+  <img src="https://img.shields.io/badge/skills-29-orange?style=for-the-badge" alt="Skills" />
+  <img src="https://img.shields.io/badge/workflows-28-blue?style=for-the-badge" alt="Workflows" />
+</p>
 
-# 🪐 Antigravity OS
+<h1 align="center">🪐 Antigravity OS</h1>
 
-### O Sistema Operacional que transforma seu Antigravity de um assistente genérico em um engenheiro de software sênior autônomo.
+<p align="center">
+  <strong>O Sistema Operacional que transforma o Gemini CLI<br/>de um assistente genérico em um engenheiro de software sênior autônomo.</strong>
+</p>
 
-[![Version](https://img.shields.io/badge/version-4.0-blueviolet?style=for-the-badge)]()
-[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)]()
-[![Platform](https://img.shields.io/badge/platform-Gemini_CLI_%7C_Antigravity-black?style=for-the-badge)]()
-[![Skills](https://img.shields.io/badge/skills-37+-orange?style=for-the-badge)]()
-[![Workflows](https://img.shields.io/badge/workflows-29-blue?style=for-the-badge)]()
+<p align="center">
+  Criado por <strong><a href="https://instagram.com/heldaysousa">Helday Sousa</a></strong> · <a href="https://instagram.com/heldaysousa">@heldaysousa</a>
+</p>
 
-**Criado por [Helday Sousa](https://instagram.com/heldaysousa)** · [@heldaysousa](https://instagram.com/heldaysousa)
+<p align="center">
+  <a href="#-o-que-é">O que é</a> •
+  <a href="#-antes-vs-depois">Antes vs Depois</a> •
+  <a href="#-instalação">Instalação</a> •
+  <a href="#-arquitetura">Arquitetura</a> •
+  <a href="#-skills">Skills</a> •
+  <a href="#-workflows">Workflows</a> •
+  <a href="#-como-funciona">Como Funciona</a> •
+  <a href="#-faq">FAQ</a>
+</p>
 
 ---
 
-[O que é](#-o-que-é-o-antigravity-os) · [Antes vs Depois](#-antes-vs-depois) · [Instalação](#-instalação) · [Arquitetura](#-arquitetura-do-sistema) · [Skills](#-skills-incluídas) · [Workflows](#-workflows-incluídos) · [Como Funciona](#-como-funciona-na-prática) · [FAQ](#-faq)
+<br/>
 
-</div>
+## 🧠 O que é
 
----
+O **Antigravity OS** é um conjunto otimizado de **regras, skills, workflows, protocolos de orquestração e mecanismos de memória** que você instala no Gemini CLI para transformá-lo de um chatbot que responde perguntas em um **engenheiro de software autônomo de nível sênior**.
 
-## 🧠 O que é o Antigravity OS?
+O Antigravity "vanilla" (de fábrica) é como um computador sem sistema operacional. Ele tem poder bruto (o modelo de linguagem), mas não sabe:
 
-O **Antigravity OS** é um conjunto altamente otimizado de **regras, skills, workflows, protocolos de orquestração e mecanismos de memória** que você instala no seu ambiente Antigravity (Gemini CLI) para transformá-lo de um chatbot que responde perguntas em um **engenheiro de software autônomo de nível sênior**.
+- 🧠 Se organizar entre sessões
+- 📊 Gerenciar token budget para não explodir contexto
+- 🧩 Decompor uma tarefa complexa em sub-tarefas paralelas
+- 🔍 Se auto-auditar antes de dizer "tá pronto"
+- 🚑 Recuperar de erros sem travar e pedir ajuda
+- 💻 Se adaptar ao hardware onde está rodando
 
-Pense assim: o Antigravity "vanilla" (de fábrica) é como um computador novo sem sistema operacional. Ele tem poder bruto (o modelo de linguagem), mas não sabe:
+> **O Antigravity OS resolve todos esses problemas.** É o equivalente a instalar macOS em um hardware Apple — transforma potencial bruto em produtividade real.
 
-- Como se organizar entre sessões
-- Como gerenciar token budget para não explodir contexto
-- Como decompor uma tarefa complexa em sub-tarefas paralelas
-- Como se auto-auditar antes de dizer "tá pronto"
-- Como recuperar de erros sem travar e pedir ajuda desnecessariamente
-- Como se adaptar ao hardware onde está rodando
-
-O **Antigravity OS** resolve **todos** esses problemas. É o equivalente a instalar macOS em um hardware Apple — transforma potencial bruto em produtividade real.
+<br/>
 
 ### Por que isso existe?
 
-Depois de centenas de horas codando com AI agents, ficou claro que o gargalo não é a inteligência do modelo — é a **falta de estrutura operacional**. O modelo:
+Depois de centenas de horas codando com AI agents, ficou claro que o gargalo não é a inteligência do modelo — é a **falta de estrutura operacional**.
 
-- Esquece o contexto entre sessões
-- Gasta tokens lendo arquivos inteiros desnecessariamente
-- Não sabe priorizar tarefas
-- Não se auto-corrige quando algo quebra
-- Não documenta o que fez para o próximo agente continuar
+O modelo esquece contexto entre sessões, gasta tokens lendo arquivos inteiros, não prioriza tarefas, não se auto-corrige, e não documenta o que fez para o próximo agente continuar.
 
-O Antigravity OS foi construído **empiricamente** — cada rule, cada workflow, cada skill nasceu de **uma dor real** encontrada durante desenvolvimento de produção.
+O Antigravity OS foi construído **empiricamente** — cada rule, cada workflow, cada skill nasceu de uma dor real encontrada durante desenvolvimento de produção.
+
+<br/>
 
 ---
+
+<br/>
 
 ## 📊 Antes vs Depois
 
-| Dimensão | 🔴 Antigravity Vanilla | 🟢 Com Antigravity OS |
-|---|---|---|
-| **Memória entre sessões** | Zero. Cada sessão começa do zero | `STATE.md` + `HANDOFF.md` + Knowledge DB persistem contexto |
-| **Gestão de tokens** | Sem controle. Lê arquivos inteiros de 5000 linhas | Lei dos 3.300 tokens + LSFS (Lazy Smart File Search) |
-| **Decomposição de tarefas** | Tenta fazer tudo de uma vez e trava | `/decompose-task` quebra em sub-tasks com dependências |
-| **Recuperação de erros** | Para e pergunta "o que faço?" | `/error-recovery` — 3 níveis de auto-correção silenciosa |
-| **Paralelismo** | Sequencial sempre | `/parallel-execution` — sub-agentes simultâneos |
-| **Auto-auditoria** | Diz "pronto" sem verificar | `/self-audit` — 5 filtros obrigatórios antes de ✅ |
-| **Qualidade de código** | Genérica | 37+ skills especializadas (TypeScript, React, Postgres, Security) |
-| **Orquestração** | Inexistente | Master Orchestrator com delegation pattern |
-| **Deploy** | Manual | `/deploy-safe` — pipeline com rollback automático |
-| **Hardware awareness** | Ignora limites | Adapta paralelismo ao hardware real (RAM/CPU checks) |
-| **Segurança** | Best-effort | Skills dedicadas (RLS, OWASP, secrets, .env isolation) |
-| **Feature flags** | Inexistente | `/feature-flag` — toggle ON/OFF sem deploy separado |
+| Dimensão | 🔴 Vanilla | 🟢 Com Antigravity OS |
+|:---|:---|:---|
+| **Memória entre sessões** | Zero — cada sessão do zero | `STATE.md` + `HANDOFF.md` persistem contexto |
+| **Gestão de tokens** | Sem controle — lê arquivos de 5000 linhas | Lei dos 3.300 tokens + LSFS |
+| **Decomposição de tarefas** | Tenta tudo de uma vez | `/decompose-task` com dependências |
+| **Recuperação de erros** | Para e pergunta "o que faço?" | 3 níveis de auto-correção silenciosa |
+| **Paralelismo** | Sequencial sempre | Sub-agentes simultâneos |
+| **Auto-auditoria** | Diz "pronto" sem verificar | 5 filtros obrigatórios antes de ✅ |
+| **Qualidade de código** | Genérica | 29 skills especializadas |
+| **Orquestração** | Inexistente | Master Orchestrator com delegation |
+| **Deploy** | Manual | Pipeline com rollback automático |
+| **Hardware awareness** | Ignora limites | Adapta paralelismo à RAM/CPU |
+| **Segurança** | Best-effort | RLS, OWASP, secrets, .env isolation |
+| **Feature flags** | Inexistente | Toggle ON/OFF sem deploy |
+
+<br/>
 
 ---
+
+<br/>
 
 ## 🔧 Instalação
 
 ### Pré-requisitos
 
-- [Gemini CLI](https://github.com/google-gemini/gemini-cli) instalado e funcionando
-- Um workspace/projeto onde você quer ativar o OS
-- Git instalado
+- ✅ [Gemini CLI](https://github.com/google-gemini/gemini-cli) instalado e funcionando
+- ✅ Um workspace/projeto onde você quer ativar o OS
+- ✅ Git instalado
 
-### Passo 1: Clone o Repositório
+<br/>
+
+### Passo 1 — Clone o repositório
 
 ```bash
 git clone https://github.com/heldaysousa/antigravity-os.git
 ```
 
-### Passo 2: Copie a pasta `.agents/` para a raiz do seu projeto
+<br/>
+
+### Passo 2 — Copie `.agents/` para a raiz do seu projeto
 
 ```bash
-# Navegue até o seu projeto
 cd /caminho/do/seu/projeto
-
-# Copie toda a estrutura do OS para seu workspace
 cp -r /caminho/para/antigravity-os/.agents/ ./.agents/
 ```
 
-### Passo 3: (Opcional) Copie os trackers de estado
+<br/>
+
+### Passo 3 — Copie os trackers de estado (opcional)
 
 Se você quer o sistema de memória entre sessões:
 
 ```bash
-# Copia os arquivos de tracking contextual
 cp /caminho/para/antigravity-os/STATE.md ./STATE.md
 cp /caminho/para/antigravity-os/HANDOFF.md ./HANDOFF.md
 cp /caminho/para/antigravity-os/GUIAMESTRE.md ./GUIAMESTRE.md
 ```
 
-> ⚠️ **Importante:** Edite o `STATE.md` para refletir o estado real do **seu** projeto. O arquivo que vem no repo é um template — limpe o conteúdo específico e mantenha apenas a estrutura.
+> ⚠️ Edite o `STATE.md` para refletir o estado real do seu projeto. O arquivo que vem é um template.
 
-### Passo 4: Configure as regras globais (Opcional — Nível Avançado)
+<br/>
 
-Para ativar as regras globais do OS em **todos** os seus projetos:
+### Passo 4 — Configure regras globais (avançado, opcional)
+
+Para ativar as regras em **todos** os seus projetos:
 
 ```bash
-# Crie o diretório do bootstrap global
 mkdir -p ~/.antigravity/
 
-# Crie o arquivo de bootstrap
 cat > ~/.antigravity/AGENT_BOOTSTRAP.md << 'EOF'
 # ANTIGRAVITY OS — BOOTSTRAP v4.0
 
@@ -123,7 +142,7 @@ cat > ~/.antigravity/AGENT_BOOTSTRAP.md << 'EOF'
 
 ## 2. LSFS (OBRIGATÓRIO)
 - NUNCA: cat / ler arquivos inteiros que passarem do budget.
-- SEMPRE: usar ferramentas de busca (codebase-search, grep_search) para focar no código relevante.
+- SEMPRE: usar ferramentas de busca para focar no código relevante.
 
 ## 3. ERROR RECOVERY
 1. Consulta rápida à base de conhecimento local.
@@ -132,9 +151,11 @@ cat > ~/.antigravity/AGENT_BOOTSTRAP.md << 'EOF'
 EOF
 ```
 
-### Passo 5: Configure o `gemini.json` do seu projeto (Recomendado)
+<br/>
 
-Adicione no seu `gemini.json` (ou no settings global `~/.gemini/settings.json`):
+### Passo 5 — Configure o `gemini.json` (recomendado)
+
+Adicione no `gemini.json` do projeto ou no global `~/.gemini/settings.json`:
 
 ```json
 {
@@ -145,7 +166,7 @@ Adicione no seu `gemini.json` (ou no settings global `~/.gemini/settings.json`):
     "- Tarefa > 3.300 tokens → QUEBRAR EM FASES obrigatoriamente.",
     "",
     "## LSFS (OBRIGATÓRIO)",
-    "- NUNCA: cat / ler arquivos inteiros que excedam o budget.",
+    "- NUNCA: ler arquivos inteiros que excedam o budget.",
     "- SEMPRE: usar grep_search / codebase-search antes de view_file.",
     "",
     "## ERROR RECOVERY",
@@ -156,377 +177,425 @@ Adicione no seu `gemini.json` (ou no settings global `~/.gemini/settings.json`):
 }
 ```
 
-### Pronto! 🎉
+<br/>
+
+### ✅ Pronto!
 
 A partir de agora, quando você abrir o Gemini CLI no seu projeto, o agente vai:
+
 1. Detectar automaticamente a pasta `.agents/`
 2. Carregar os skills e workflows disponíveis
 3. Seguir os protocolos do Antigravity OS
 4. Operar como um engenheiro sênior com memória, auto-correção e paralelismo
 
+<br/>
+
 ---
 
-## 🏗️ Arquitetura do Sistema
+<br/>
+
+## 🏗️ Arquitetura
 
 ```
 seu-projeto/
-├── .agents/                          # ← CORE DO ANTIGRAVITY OS
-│   ├── rules/                        # Regras estritas que o agente SEMPRE segue
-│   │   ├── core-rules.md             # Lei dos tokens, MCP policy, modelo
-│   │   └── no-browser.md             # Restrições de acesso a browser
-│   │
-│   ├── skills/                       # 37+ habilidades especializadas (JIT loaded)
-│   │   ├── debugger/                 # Debug sistemático com estado persistente
-│   │   ├── executor/                 # Commit atômico + checkpoint protocols
-│   │   ├── planner/                  # Decomposição tipo "tree of thoughts"
-│   │   ├── plan-checker/             # Validação de planos antes de executar
-│   │   ├── verifier/                 # Verificação empírica de trabalho feito
-│   │   ├── empirical-validation/     # Exige prova antes de marcar como "done"
-│   │   ├── token-budget/             # Gerenciamento de budget de tokens
-│   │   ├── typescript-pro/           # TypeScript avançado com tipos estritos
-│   │   ├── react-best-practices/     # 45+ regras de performance React/Next.js
-│   │   ├── postgres-best-practices/  # 32+ regras de otimização Postgres
-│   │   ├── backend-security-coder/   # Segurança backend (OWASP, RLS, auth)
-│   │   ├── auth-implementation-patterns/ # Padrões de autenticação
-│   │   ├── ui-ux-pro-max/            # 50 estilos, 21 paletas, 50 font pairings
-│   │   ├── zod-validation-expert/    # Validação Zod + React Hook Form + tRPC
-│   │   ├── zustand-store-ts/         # Stores Zustand tipados
-│   │   ├── vercel-deployment/        # Deploy em Vercel com Next.js
-│   │   ├── vercel-ai-sdk-expert/     # Vercel AI SDK (useChat, streaming, tools)
-│   │   ├── gemini-api-dev/           # Google Gemini API integration
-│   │   ├── llm-ops/                  # RAG, embeddings, fine-tuning, evals
-│   │   ├── git-hooks-automation/     # Husky, lint-staged, commitlint
-│   │   ├── edge-functions/           # Edge Functions (Deno, Supabase)
-│   │   ├── self-improving-agent/     # Auto-evolução do agente
-│   │   └── ...                       # E muito mais
-│   │
-│   ├── workflows/                    # 29 processos passo-a-passo (slash commands)
-│   │   ├── master-orchestration.md   # 🎯 Orquestrador Mestre (multi-agente)
-│   │   ├── error-recovery.md         # 🚑 Auto-recuperação de erros
-│   │   ├── parallel-execution.md     # ⚡ Execução paralela de sub-agentes
-│   │   ├── token-budget.md           # 💰 Economia de tokens
-│   │   ├── context-handoff.md        # 🤝 Transferência de contexto entre sessões
-│   │   ├── self-audit.md             # 🔬 Auto-auditoria antes de finalizar
-│   │   ├── feature-flag.md           # 🚦 Feature flags para deploys seguros
-│   │   ├── decompose-task.md         # 🧩 Decomposição de tasks complexas
-│   │   ├── plan.md                   # 📋 Plan Mode (dry-run antes de codar)
-│   │   ├── grind.md                  # 🔄 Loop de correção automática
-│   │   ├── debug.md                  # 🐛 Debug e troubleshooting
-│   │   ├── code-review.md            # 👀 Code review de segurança e qualidade
-│   │   ├── security.md               # 🔐 Regras de segurança
-│   │   ├── testing.md                # 🧪 Padrões de testes
-│   │   ├── deploy-safe.md            # 🚀 Deploy seguro com rollback
-│   │   ├── migrations.md             # 🗄️ Migrations com RLS e rollback
-│   │   ├── create-component.md       # 🧱 Criar componente seguindo padrões
-│   │   ├── validate-integration.md   # ✅ Validação cross-layer
-│   │   └── ...                       # E mais 10
-│   │
-│   ├── prompts/                      # Templates de prompt reutilizáveis
-│   └── scratchpad.md                 # Memória de curto prazo do agente
 │
-├── STATE.md                          # 📊 Estado atual do projeto (boot ~300 tokens)
-├── HANDOFF.md                        # 🤝 Briefing para transferência entre sessões
-└── GUIAMESTRE.md                     # 📖 Manual do sistema para o agente (~400 tokens)
+├── .agents/                              ← CORE DO ANTIGRAVITY OS
+│   │
+│   ├── rules/                            Regras estritas (sempre ativas)
+│   │   ├── core-rules.md                 Lei dos tokens, MCP policy
+│   │   └── no-browser.md                 Restrições de browser
+│   │
+│   ├── skills/                           29 skills especializadas (JIT)
+│   │   ├── debugger/                     Debug sistemático
+│   │   ├── executor/                     Commits atômicos + checkpoints
+│   │   ├── planner/                      Decomposição "tree of thoughts"
+│   │   ├── typescript-pro/               TypeScript avançado
+│   │   ├── react-best-practices/         45+ regras React/Next.js
+│   │   ├── postgres-best-practices/      32+ regras Postgres
+│   │   ├── ui-ux-pro-max/               50 estilos, 21 paletas
+│   │   └── ...                           + 22 outras skills
+│   │
+│   ├── workflows/                        28 processos (slash commands)
+│   │   ├── master-orchestration.md       Orquestrador multi-agente
+│   │   ├── error-recovery.md             Auto-recuperação de erros
+│   │   ├── parallel-execution.md         Execução paralela
+│   │   ├── grind.md                      Loop de correção automática
+│   │   └── ...                           + 24 outros workflows
+│   │
+│   ├── GUIA_MESTRE_ORQUESTRACAO.md       Manual do orquestrador
+│   └── scratchpad.md                     Memória de curto prazo
+│
+├── STATE.md                              Estado atual (boot ~300 tokens)
+├── HANDOFF.md                            Briefing entre sessões
+└── GUIAMESTRE.md                         Manual do sistema (~400 tokens)
 ```
 
+<br/>
+
 ---
 
-## 🎯 Skills Incluídas
+<br/>
 
-O Antigravity OS vem com **37+ skills** que são carregadas **Just-In-Time** (JIT) — o agente só carrega a skill quando precisa, economizando tokens:
+## 🎯 Skills
 
-### 🔧 Core (Operação do Agente)
-| Skill | Descrição |
-|---|---|
-| `executor` | Executa planos com commits atômicos, desvio handling e checkpoints |
-| `planner` | Cria planos em fases com dependências e verificação goal-backward |
-| `plan-checker` | Valida planos antes de executar para pegar problemas cedo |
-| `debugger` | Debug sistemático com estado persistente e contexto fresco |
-| `verifier` | Valida trabalho implementado contra spec com evidência empírica |
+29 skills carregadas **Just-In-Time** (JIT) — o agente só carrega quando precisa:
+
+<br/>
+
+### 🔧 Core — Operação do Agente
+
+| Skill | O que faz |
+|:---|:---|
+| `executor` | Commits atômicos, desvio handling, checkpoints |
+| `planner` | Planos em fases com dependências e verificação goal-backward |
+| `plan-checker` | Valida planos antes de executar |
+| `debugger` | Debug sistemático com estado persistente |
+| `verifier` | Valida trabalho contra spec com evidência empírica |
 | `empirical-validation` | Exige prova real antes de marcar como completo |
-| `token-budget` | Estima e rastreia budget de tokens para prevenir overflow |
-| `self-improving-agent` | Auto-evolução: o agente melhora seus próprios processos |
-| `intake` | Brainstorming: transforma ideias vagas em designs validados |
+| `token-budget` | Rastreia budget de tokens para prevenir overflow |
+| `self-improving-agent` | O agente melhora seus próprios processos |
+| `intake` | Transforma ideias vagas em designs validados |
+
+<br/>
 
 ### 💻 Desenvolvimento
-| Skill | Descrição |
-|---|---|
-| `typescript-pro` | TypeScript avançado: generics, strict mode, decorators, enterprise patterns |
-| `react-best-practices` | 45+ regras de performance para React e Next.js (mantidas pela Vercel) |
-| `zustand-store-ts` | Stores Zustand tipados com middleware e padrões estabelecidos |
-| `zod-validation-expert` | Validação Zod com React Hook Form, Next.js e tRPC |
-| `create-component` | Cria componentes React seguindo padrões: functional, TS strict, acessíveis |
+
+| Skill | O que faz |
+|:---|:---|
+| `typescript-pro` | Generics, strict mode, decorators, patterns enterprise |
+| `react-best-practices` | 45+ regras de performance React e Next.js |
+| `zustand-store-ts` | Stores Zustand tipados com middleware |
+| `zod-validation-expert` | Validação Zod + React Hook Form + tRPC |
+
+<br/>
 
 ### 🗄️ Backend & Database
-| Skill | Descrição |
-|---|---|
-| `postgres-best-practices` | 32+ regras de otimização Postgres: índices, queries, locks, monitoring |
-| `edge-functions` | Desenvolver Edge Functions com Deno (CORS, cold start, error handling) |
+
+| Skill | O que faz |
+|:---|:---|
+| `postgres-best-practices` | 32+ regras: índices, queries, locks, monitoring |
+| `edge-functions` | Edge Functions com Deno: CORS, cold start, errors |
 | `migrations` | Migrations seguras com RLS, multi-tenant, rollback |
-| `backend-security-coder` | Segurança backend: input validation, auth, API security (OWASP) |
-| `auth-implementation-patterns` | Padrões de autenticação e autorização enterprise-grade |
+| `backend-security-coder` | Input validation, auth, API security (OWASP) |
+| `auth-implementation-patterns` | Auth e autorização enterprise-grade |
+
+<br/>
 
 ### 🎨 UI/UX & Design
-| Skill | Descrição |
-|---|---|
-| `ui-ux-pro-max` | 50 estilos visuais, 21 paletas, 50 font pairings, 20 charts, 9 stacks |
+
+| Skill | O que faz |
+|:---|:---|
+| `ui-ux-pro-max` | 50 estilos, 21 paletas, 50 font pairings, 9 stacks |
+
+<br/>
 
 ### 🚀 Deploy & DevOps
-| Skill | Descrição |
-|---|---|
-| `vercel-deployment` | Deploy em Vercel com Next.js: configuração, domínios, edge config |
-| `vercel-automation` | Automação via MCP: deployments, DNS, env vars, projects |
-| `vercel-ai-sdk-expert` | Vercel AI SDK: useChat, streaming, function calling |
-| `deploy-safe` | Deploy seguro com verificação e rollback automático |
-| `git-hooks-automation` | Husky, lint-staged, commitlint: qualidade antes do CI |
+
+| Skill | O que faz |
+|:---|:---|
+| `vercel-deployment` | Deploy Vercel + Next.js: domínios, edge config |
+| `vercel-automation` | Automação via MCP: deployments, DNS, env vars |
+| `vercel-ai-sdk-expert` | Vercel AI SDK: useChat, streaming, tools |
+| `git-hooks-automation` | Husky, lint-staged, commitlint |
 | `git-workflow` | Workflow Git estruturado para equipes |
 
+<br/>
+
 ### 🤖 AI & LLM
-| Skill | Descrição |
-|---|---|
-| `gemini-api-dev` | Google Gemini API: multimodal, streaming, function calling |
-| `gemini-api-integration` | Integração Gemini em projetos reais de produção |
-| `llm-ops` | RAG, embeddings, vector DB, fine-tuning, prompt engineering, evals |
-| `rag` | Retrieval Augmented Generation: implementação e otimização |
+
+| Skill | O que faz |
+|:---|:---|
+| `gemini-api-dev` | Gemini API: multimodal, streaming, function calling |
+| `gemini-api-integration` | Integração Gemini em projetos de produção |
+| `llm-ops` | RAG, embeddings, vector DB, fine-tuning, evals |
+| `rag` | Retrieval Augmented Generation |
+
+<br/>
 
 ---
 
-## 🔄 Workflows Incluídos
+<br/>
 
-Os workflows são **processos passo-a-passo** ativados via slash commands. São o coração operacional do OS:
+## 🔄 Workflows
+
+28 processos passo-a-passo ativados via slash commands:
+
+<br/>
 
 ### 🎯 Orquestração & Planejamento
+
 | Comando | Para que serve |
-|---|---|
-| `/master-orchestration` | Orquestração multi-agente para implementações complexas (>10 tasks) |
-| `/decompose-task` | Decomposição analítica de tasks complexas em sub-tasks com dependências |
-| `/parallel-execution` | Dispara múltiplos sub-agentes simultaneamente (reduz tempo 60-70%) |
-| `/plan` | Força o agente a pensar primeiro e pedir aprovação antes de codar |
+|:---|:---|
+| `/master-orchestration` | Orquestração multi-agente (>10 tasks) |
+| `/decompose-task` | Decomposição em sub-tasks com dependências |
+| `/parallel-execution` | Sub-agentes simultâneos (reduz tempo 60-70%) |
+| `/plan` | Dry-run: pensar primeiro, codar depois |
+
+<br/>
 
 ### 🔧 Desenvolvimento & Debug
+
 | Comando | Para que serve |
-|---|---|
-| `/grind` | Loop de correção automática até o código passar sem erros |
-| `/debug` | Análise de causa raiz, instrumentação, diagnóstico |
-| `/code-review` | Code review de segurança e qualidade |
-| `/create-component` | Criar componente seguindo padrões do projeto |
+|:---|:---|
+| `/grind` | Loop de correção automática até passar |
+| `/debug` | Análise de causa raiz e diagnóstico |
+| `/code-review` | Review de segurança e qualidade |
+| `/create-component` | Criar componente seguindo padrões |
+
+<br/>
 
 ### 🧠 Contexto & Memória
+
 | Comando | Para que serve |
-|---|---|
-| `/context-handoff` | Transferência de contexto entre sessões sem re-explicar tudo |
-| `/read-project-state` | Leitura real-time do estado do projeto  |
-| `/token-budget` | Economia de tokens quando contexto está grande |
+|:---|:---|
+| `/context-handoff` | Transferir contexto entre sessões |
+| `/read-project-state` | Leitura real-time do estado do projeto |
+| `/token-budget` | Economia de tokens (contexto grande) |
+| `/session-recovery` | Restaurar sessão quebrada |
+
+<br/>
 
 ### 🚀 Deploy & Segurança
+
 | Comando | Para que serve |
-|---|---|
-| `/deploy-safe` | Pipeline de deploy seguro com verificação e rollback |
-| `/security` | Regras de segurança: .env, secrets, RLS, OWASP |
+|:---|:---|
+| `/deploy-safe` | Deploy seguro com verificação e rollback |
+| `/security` | Regras: .env, secrets, RLS, OWASP |
 | `/feature-flag` | Toggle ON/OFF para features de risco |
-| `/testing` | Padrões de testes: Vitest, pgTAP, Playwright |
-| `/migrations` | Migrations Supabase com RLS, multi-tenant, rollback |
+| `/testing` | Padrões: Vitest, pgTAP, Playwright |
+| `/migrations` | Migrations com RLS e rollback |
+
+<br/>
 
 ### 🔬 Qualidade & Validação
+
 | Comando | Para que serve |
-|---|---|
-| `/self-audit` | Checklist obrigatório antes de marcar task como concluída |
-| `/validate-integration` | Validação cross-layer: frontend ↔ backend ↔ database ↔ deploy |
-| `/error-recovery` | Recuperação autônoma de erros: retry, escalação, rollback |
+|:---|:---|
+| `/self-audit` | Checklist antes de marcar como ✅ |
+| `/validate-integration` | Validação frontend ↔ backend ↔ DB |
+| `/error-recovery` | Auto-recuperação: retry, escalação, rollback |
+| `/self-improving` | O agente aprende com erros anteriores |
+
+<br/>
 
 ---
 
-## ⚙️ Como Funciona na Prática
+<br/>
+
+## ⚙️ Como Funciona
+
+<br/>
 
 ### 1. A Lei dos 3.300 Tokens
 
-O princípio fundamental do OS. O agente opera com um **budget fixo de ~3.300 tokens de contexto** para evitar degradação de qualidade:
+O agente opera com um budget fixo para evitar degradação de qualidade:
 
 ```
-AGENT_BOOTSTRAP:    ~500 tokens  (regras do sistema)
-STATE.md:           ~300 tokens  (estado atual do projeto)
-Spec da tarefa:     ~200 tokens  (o que precisa ser feito)
-Skill carregada:    ~800 tokens  (habilidade JIT para a tarefa)
-LSFS (busca):     ~1.500 tokens  (código encontrado via grep/search)
-─────────────────────────────────
-TOTAL:            ~3.300 tokens
+AGENT_BOOTSTRAP     ~500 tokens    regras do sistema
+STATE.md            ~300 tokens    estado do projeto
+Spec da tarefa      ~200 tokens    o que fazer
+Skill JIT           ~800 tokens    habilidade carregada
+LSFS (busca)      ~1.500 tokens    código via grep/search
+────────────────────────────────
+TOTAL             ~3.300 tokens
 ```
 
-Se o agente precisa de mais contexto, ele **quebra a tarefa em fases** ao invés de sobrecarregar a janela.
+> Se precisa de mais contexto → **quebra em fases** ao invés de sobrecarregar.
+
+<br/>
 
 ### 2. LSFS — Lazy Smart File Search
 
-O agente **nunca** lê arquivos inteiros. Ele:
-1. Usa `grep_search` para encontrar exatamente as linhas relevantes
-2. Usa `view_file_outline` para entender a estrutura
-3. Só então usa `view_file` com ranges específicas
+O agente **nunca** lê arquivos inteiros:
 
-Isso economiza **70-80% dos tokens** em projetos grandes.
+```
+1. grep_search        → encontra linhas relevantes
+2. view_file_outline  → entende a estrutura
+3. view_file (range)  → lê só o necessário
+```
+
+> Economia de **70-80% dos tokens** em projetos grandes.
+
+<br/>
 
 ### 3. Memória entre Sessões
 
 ```
-Sessão 1: "Implementei login e estou no passo 3 de 5. Falta logout e reset."
-         → Salva em STATE.md + HANDOFF.md
+Sessão 1:  "Implementei login, passo 3 de 5. Falta logout e reset."
+           → Salva em STATE.md + HANDOFF.md
 
-Sessão 2: Agente lê STATE.md no boot → continua exatamente de onde parou
-         → "Vejo que login está pronto. Vou começar pelo logout."
+Sessão 2:  Agente lê STATE.md no boot
+           → "Login pronto. Vou começar pelo logout."
 ```
+
+<br/>
 
 ### 4. Error Recovery em 3 Níveis
 
 ```
-Nível 1: Erro leve (typo, import errado)
-         → Auto-correção silenciosa
-
-Nível 2: Erro estrutural (abordagem errada)
-         → Notifica mudança de estratégia, tenta alternativa
-
-Nível 3: Falha crítica (tudo quebrou)
-         → git stash → documenta erro → pede decisão humana
+Nível 1:  Erro leve (typo, import)        → auto-correção silenciosa
+Nível 2:  Erro estrutural (approach)       → tenta alternativa, notifica
+Nível 3:  Falha crítica (tudo quebrou)     → git stash → documenta → pede ajuda
 ```
+
+<br/>
 
 ### 5. Orquestração Multi-Agente
 
-Para tarefas complexas (>10 sub-tasks), o agente ativa o **Master Orchestrator:**
+```
+Humano:        "Implementa autenticação completa"
+                         │
+Orquestrador:  Decompõe em 8 sub-tasks
+                         │
+               Tasks 1,2,3 (independentes) → PARALELO
+                         │
+               Task 4 (depende de 1) → aguarda → executa
+                         │
+               Self-audit → 5 filtros por task
+                         │
+               Validate-integration → tudo junto
+                         │
+               HANDOFF atualizado → próxima sessão
+```
 
-```
-Você (humano):  "Implementa autenticação completa"
-                        ↓
-Orquestrador:   Decompõe em 8 sub-tasks
-                        ↓
-                Tasks 1,2,3 (independentes) → executa em PARALELO
-                        ↓
-                Task 4 (depende de 1) → aguarda, depois executa
-                        ↓
-                Self-audit de cada task → só marca ✅ se passou nos 5 filtros
-                        ↓
-                Validate-integration → verifica tudo junto
-                        ↓
-                HANDOFF atualizado para próxima sessão
-```
+<br/>
 
 ---
 
+<br/>
+
 ## 🎛️ Configuração Avançada
 
-### Adaptando ao seu Hardware
-
-O OS foi projetado para rodar em hardware modesto. Edite as regras conforme seu setup:
+### Adaptando ao Hardware
 
 ```markdown
 # Em .agents/rules/core-rules.md
 
-# Para máquinas modestas (8GB RAM):
+# 8GB RAM (modesto):
 Máx 2 sub-agentes paralelos. Serializar se CPU > 80% ou RAM > 6GB.
 
-# Para máquinas potentes (16GB+ RAM):
+# 16GB+ RAM (potente):
 Máx 4 sub-agentes paralelos. Serializar se CPU > 90% ou RAM > 12GB.
 ```
 
-### Adicionando Skills Customizadas
+<br/>
+
+### Criando Skills Customizadas
 
 ```bash
-# Crie uma nova skill
 mkdir -p .agents/skills/minha-skill/
 
-# Crie o arquivo principal
 cat > .agents/skills/minha-skill/SKILL.md << 'EOF'
 ---
 name: Minha Skill Custom
 description: Descreva o que ela faz
 ---
-
 # Instruções para o Agente
 [Suas regras e padrões aqui]
 EOF
 ```
 
-### Adicionando Workflows Customizados
+<br/>
+
+### Criando Workflows Customizados
 
 ```bash
 cat > .agents/workflows/meu-workflow.md << 'EOF'
 ---
-description: Descrição do que esse workflow faz
+description: Descrição do workflow
 ---
-
 ## Passos
-
 1. Primeiro passo
 2. Segundo passo
 3. Terceiro passo
 EOF
 ```
 
-Para ativar: digite `/meu-workflow` no Gemini CLI.
+Ativar: digite `/meu-workflow` no Gemini CLI.
+
+<br/>
 
 ---
 
-## 🎓 FAQ
+<br/>
 
-### "Funciona com qualquer projeto?"
-**Sim.** O OS é agnóstico de framework/linguagem. As skills cobrem React, Next.js, Vue, Svelte, Flutter, React Native, PostgreSQL, Deno, e mais. Ele se adapta ao seu projeto.
+## 📈 Benchmarks
 
-### "Preciso saber programar para usar?"
-Sim, é uma ferramenta para desenvolvedores. O OS potencializa o agente, mas você precisa entender o que ele está fazendo pra direcionar bem.
-
-### "Funciona com o Gemini CLI gratuito?"
-**Sim.** Foi projetado para funcionar com a versão gratuita, respeitando limites de tokens e rate limits.
-
-### "Posso modificar as skills e workflows?"
-**Absolutamente.** Esse é o ponto. Fork, customize, adicione skills do seu domínio. Quanto mais personalizado, melhor o agente opera.
-
-### "Isso substitui o Cursor / Windsurf / Copilot?"
-Não é concorrente — é **complementar** ou uma alternativa. O Antigravity OS foca em transformar o Gemini CLI em um agente autônomo com memória e auto-correção, algo que IDEs com AI não fazem nesse nível.
-
-### "Posso contribuir?"
-Sim! Fork, melhore, e abra PRs. O ecossistema cresce quando a comunidade colabora.
-
----
-
-## 📈 Números Reais (Benchmarks)
-
-Métricas observadas em produção real durante 3+ meses de uso intensivo:
+Métricas de 3+ meses de uso intensivo em produção:
 
 | Métrica | Sem OS | Com OS | Melhoria |
-|---|---|---|---|
-| Tokens gastos por sessão | ~50k | ~12k | **-76%** |
-| Tasks completadas sem intervenção | ~30% | ~85% | **+183%** |
-| Erros não recuperados | ~40% | ~5% | **-87.5%** |
+|:---|:---:|:---:|:---:|
+| Tokens por sessão | ~50k | ~12k | **-76%** |
+| Tasks sem intervenção | ~30% | ~85% | **+183%** |
+| Erros não recuperados | ~40% | ~5% | **-87%** |
 | Context loss entre sessões | 100% | ~5% | **-95%** |
-| Tempo para tarefas complexas (10+ steps) | 3-4h | 45min-1h | **-75%** |
+| Tempo (tarefas 10+ steps) | 3-4h | 45min-1h | **-75%** |
+
+<br/>
 
 ---
 
-## 🤝 Créditos & Contato
+<br/>
 
-<div align="center">
+## ❓ FAQ
 
-### Criado por **Helday Sousa**
+**Funciona com qualquer projeto?**
+Sim. O OS é agnóstico de framework/linguagem. Skills cobrem React, Next.js, Vue, Svelte, Flutter, PostgreSQL, Deno e mais.
 
-[![Instagram](https://img.shields.io/badge/Instagram-@heldaysousa-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/heldaysousa)
+**Preciso saber programar?**
+Sim. O OS potencializa o agente, mas você precisa entender o que ele faz para direcionar.
 
-O Antigravity OS nasceu de **centenas de horas** de desenvolvimento real com AI agents. Cada otimização, cada workflow, cada skill veio de uma dor real encontrada em produção.
+**Funciona com o Gemini CLI gratuito?**
+Sim. Projetado para respeitar limites de tokens e rate limits.
 
-Se esse projeto te ajudou, dá uma estrela ⭐ e me segue no Instagram para mais conteúdo sobre AI-powered development.
+**Posso modificar skills e workflows?**
+Absolutamente. Fork, customize, adicione skills do seu domínio.
 
-**Instagram:** [@heldaysousa](https://instagram.com/heldaysousa)
+**Substitui o Cursor / Windsurf / Copilot?**
+Não é concorrente — é complementar. Foca em transformar o Gemini CLI em agente autônomo com memória e auto-correção.
 
-</div>
+**Posso contribuir?**
+Sim! Fork, melhore, abra PRs.
+
+<br/>
 
 ---
 
-## 📜 Licença
+<br/>
 
-MIT — Use, modifique, distribua. Só dá os créditos.
+<p align="center">
+  <strong>Criado por Helday Sousa</strong>
+</p>
+
+<p align="center">
+  <a href="https://instagram.com/heldaysousa">
+    <img src="https://img.shields.io/badge/Instagram-@heldaysousa-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+</p>
+
+<p align="center">
+  O Antigravity OS nasceu de <strong>centenas de horas</strong> de dev real com AI agents.<br/>
+  Cada otimização, workflow e skill veio de uma dor real em produção.
+</p>
+
+<p align="center">
+  Se te ajudou, dá uma ⭐ e me segue no Instagram.
+</p>
+
+<br/>
 
 ---
 
-<div align="center">
+<p align="center">
+  <strong>📜 Licença MIT</strong> — Use, modifique, distribua. Só dá os créditos.
+</p>
 
-**🪐 O futuro não é sobre a AI substituir o dev. É sobre o dev ter uma AI que sabe trabalhar direito.**
+<br/>
 
-*Antigravity OS v4.0 — por [Helday Sousa](https://instagram.com/heldaysousa)*
+<p align="center">
+  <em>🪐 O futuro não é sobre a AI substituir o dev.<br/>É sobre o dev ter uma AI que sabe trabalhar direito.</em>
+</p>
 
-</div>
-]]>
+<p align="center">
+  <strong>Antigravity OS v4.0</strong> — por <a href="https://instagram.com/heldaysousa">Helday Sousa</a>
+</p>
