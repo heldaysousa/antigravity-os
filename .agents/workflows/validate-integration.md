@@ -1,5 +1,5 @@
 ---
-description: Validação de integração cross-layer. Garante que frontend, backend, database e deploy estão alinhados. Baseado no composer INNFLOW.
+description: Validação de integração cross-layer. Garante que frontend, backend, database e deploy estão alinhados. Baseado no composer Antigravity OS.
 ---
 
 # Validação de Integração

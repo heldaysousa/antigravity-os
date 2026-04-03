@@ -1,4 +1,4 @@
-# SKILL: agentic-principles (Motor IA InnFlow)
+# SKILL: agentic-principles (Motor IA Antigravity OS)
 Fluxo real: Evolution API (VPS) → webhook → unified-message-handler → ai-decision-engine
 Hierarquia: ai-decision-engine (orquestrador) → chat-ai | conversation-triage | analyze-emotion
 Regra: cada agente faz UMA coisa. Responsabilidade única.

@@ -1,8 +1,8 @@
 ---
-description: Migrations Supabase com padrões INNFLOW — RLS obrigatório, multi-tenant, org_id, índices, rollback.
+description: Migrations Supabase com padrões Antigravity OS — RLS obrigatório, multi-tenant, org_id, índices, rollback.
 ---
 
-# Migrations Supabase (Padrões INNFLOW)
+# Migrations Supabase (Padrões Antigravity OS)
 
 ## Regras Obrigatórias
 

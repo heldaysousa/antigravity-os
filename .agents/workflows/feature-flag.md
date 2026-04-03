@@ -1,5 +1,5 @@
 ---
-description: Protocolo de feature flags INNFLOW. Implementar features novas de forma segura com toggle ON/OFF sem precisar de deploy separado. Ideal para features de risco médio-alto.
+description: Protocolo de feature flags Antigravity OS. Implementar features novas de forma segura com toggle ON/OFF sem precisar de deploy separado. Ideal para features de risco médio-alto.
 ---
 
 # 🚦 Feature Flag — Deploy Seguro de Features
@@ -13,7 +13,7 @@ description: Protocolo de feature flags INNFLOW. Implementar features novas de f
 
 ---
 
-## IMPLEMENTAÇÃO PADRÃO INNFLOW
+## IMPLEMENTAÇÃO PADRÃO Antigravity OS
 
 ### 1. Criar a Constante de Flag
 

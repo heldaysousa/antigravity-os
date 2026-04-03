@@ -1,5 +1,5 @@
 ---
-description: Decomposição analítica de tarefas complexas em sub-tasks com agentes, dependências e paralelização. Baseado no splitter-agent INNFLOW.
+description: Decomposição analítica de tarefas complexas em sub-tasks com agentes, dependências e paralelização. Baseado no splitter-agent Antigravity OS.
 ---
 
 # Decomposição Analítica de Tarefas

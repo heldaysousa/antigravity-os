@@ -1,5 +1,5 @@
 ---
-description: Protocolo de economia de tokens INNFLOW. Ativar quando contexto estiver grande ou task for complexa (>10 arquivos). Previne overflow e degradação de qualidade.
+description: Protocolo de economia de tokens Antigravity OS. Ativar quando contexto estiver grande ou task for complexa (>10 arquivos). Previne overflow e degradação de qualidade.
 ---
 
 # 💰 Token Budget — Protocolo Anti-Overflow

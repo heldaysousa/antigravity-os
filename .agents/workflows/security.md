@@ -1,8 +1,8 @@
 ---
-description: Regras de segurança INNFLOW — Nunca commitar .env, secrets, tokens. Regras de RLS, auth, OWASP.
+description: Regras de segurança Antigravity OS — Nunca commitar .env, secrets, tokens. Regras de RLS, auth, OWASP.
 ---
 
-# Segurança INNFLOW
+# Segurança Antigravity OS
 
 ## Regra #1: NUNCA commitar secrets
 

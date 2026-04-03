@@ -2,7 +2,7 @@
 description: Padrões para Edge Functions Supabase (Deno/TypeScript). SEMPRE Deno.env.get, CORS, error handling, cold start optimization.
 ---
 
-# Edge Functions Supabase (Padrões INNFLOW)
+# Edge Functions Supabase (Padrões Antigravity OS)
 
 ## Regras Deno Obrigatórias
 

@@ -1,5 +1,5 @@
 ---
-description: Protocolo de handoff entre sessões INNFLOW. Usar ao iniciar nova sessão ou após interrupção longa. Garante continuidade sem re-explicar contexto do zero.
+description: Protocolo de handoff entre sessões Antigravity OS. Usar ao iniciar nova sessão ou após interrupção longa. Garante continuidade sem re-explicar contexto do zero.
 ---
 
 # 🤝 Context Handoff — Continuidade entre Sessões

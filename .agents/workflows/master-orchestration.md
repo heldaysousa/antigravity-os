@@ -1,10 +1,10 @@
 ---
-description: Protocolo de orquestração INNFLOW v2.2 — aplicar em implementações complexas multi-agente (>10 tasks). Inclui paralelização, uso de MCP/CLI, economia de tokens, error recovery e self-audit.
+description: Protocolo de orquestração Antigravity OS v2.2 — aplicar em implementações complexas multi-agente (>10 tasks). Inclui paralelização, uso de MCP/CLI, economia de tokens, error recovery e self-audit.
 ---
 
 // turbo-all
 
-# INNFLOW MASTER ORCHESTRATION — Antigravity Edition
+# Antigravity OS MASTER ORCHESTRATION — Antigravity Edition
 
 ## QUANDO APLICAR
 

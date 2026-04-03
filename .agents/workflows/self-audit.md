@@ -1,5 +1,5 @@
 ---
-description: Protocolo de auto-auditoria INNFLOW. O agente deve rodar este checklist antes de marcar qualquer task como ✅ concluída. Evita falsos positivos e retrabalho.
+description: Protocolo de auto-auditoria Antigravity OS. O agente deve rodar este checklist antes de marcar qualquer task como ✅ concluída. Evita falsos positivos e retrabalho.
 ---
 
 # 🔬 Self-Audit — Checagem antes de Declarar "Pronto"

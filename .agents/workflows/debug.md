@@ -1,5 +1,5 @@
 ---
-description: Debug e troubleshooting INNFLOW. Análise de causa raiz, instrumentação, diagnóstico de Edge Functions, RLS, queries.
+description: Debug e troubleshooting Antigravity OS. Análise de causa raiz, instrumentação, diagnóstico de Edge Functions, RLS, queries.
 ---
 
 # Debug e Troubleshooting

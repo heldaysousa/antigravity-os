@@ -1,5 +1,5 @@
 ---
-description: Protocolo de leitura real-time do estado do projeto INNFLOW. Fonte de verdade são os ARQUIVOS, não relatórios.
+description: Protocolo de leitura real-time do estado do projeto Antigravity OS. Fonte de verdade são os ARQUIVOS, não relatórios.
 ---
 
 # Protocolo de Leitura Real-Time

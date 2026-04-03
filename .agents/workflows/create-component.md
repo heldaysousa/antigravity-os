@@ -1,8 +1,8 @@
 ---
-description: Criar componente React seguindo padrões INNFLOW. Functional component, TypeScript strict, Tailwind dark-first, Zustand, React Query.
+description: Criar componente React seguindo padrões Antigravity OS. Functional component, TypeScript strict, Tailwind dark-first, Zustand, React Query.
 ---
 
-# Criar Componente React (Padrões INNFLOW)
+# Criar Componente React (Padrões Antigravity OS)
 
 ## Template Base
 

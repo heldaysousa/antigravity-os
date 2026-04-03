@@ -1,8 +1,8 @@
 ---
-description: Padrões de testes INNFLOW — Vitest para unit, pgTAP para database, Playwright para E2E. Rodar antes de qualquer merge/deploy.
+description: Padrões de testes Antigravity OS — Vitest para unit, pgTAP para database, Playwright para E2E. Rodar antes de qualquer merge/deploy.
 ---
 
-# Testes INNFLOW
+# Testes Antigravity OS
 
 ## Unit Tests (Vitest)
 

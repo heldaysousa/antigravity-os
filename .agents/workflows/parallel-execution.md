@@ -1,5 +1,5 @@
 ---
-description: Protocolo de execução paralela INNFLOW. Define como disparar múltiplos sub-agentes simultaneamente para tasks independentes. Reduz tempo de execução de planos complexos em 60-70%.
+description: Protocolo de execução paralela Antigravity OS. Define como disparar múltiplos sub-agentes simultaneamente para tasks independentes. Reduz tempo de execução de planos complexos em 60-70%.
 ---
 
 # ⚡ Parallel Execution — Sub-Agentes Simultâneos

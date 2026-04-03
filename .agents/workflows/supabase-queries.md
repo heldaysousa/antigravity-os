@@ -1,8 +1,8 @@
 ---
-description: Padrões de queries Supabase para INNFLOW com RLS multi-tenant, performance e error handling. Usar para qualquer operação CRUD no Supabase.
+description: Padrões de queries Supabase para Antigravity OS com RLS multi-tenant, performance e error handling. Usar para qualquer operação CRUD no Supabase.
 ---
 
-# Supabase Queries (Padrões INNFLOW)
+# Supabase Queries (Padrões Antigravity OS)
 
 ## Regra #1: Multi-Tenant (org_id SEMPRE presente)
 

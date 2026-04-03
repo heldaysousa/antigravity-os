@@ -1,5 +1,5 @@
 ---
-description: Protocolo de recuperação autônoma de erros INNFLOW. Define como o agente deve agir em caso de falha em qualquer task — retry, escalação, rollback. Nunca travar, nunca desistir sem documentar.
+description: Protocolo de recuperação autônoma de erros Antigravity OS. Define como o agente deve agir em caso de falha em qualquer task — retry, escalação, rollback. Nunca travar, nunca desistir sem documentar.
 ---
 
 # 🚑 Error Recovery — Recuperação Autônoma

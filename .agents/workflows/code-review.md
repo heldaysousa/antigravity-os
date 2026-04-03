@@ -1,8 +1,8 @@
 ---
-description: Code review de segurança e qualidade INNFLOW. Verificar RLS, SQL injection, TypeScript strict, performance, secrets.
+description: Code review de segurança e qualidade Antigravity OS. Verificar RLS, SQL injection, TypeScript strict, performance, secrets.
 ---
 
-# Code Review (Padrões INNFLOW)
+# Code Review (Padrões Antigravity OS)
 
 ## Checklist de Review
 
